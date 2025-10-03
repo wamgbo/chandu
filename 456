@@ -1,8 +1,12 @@
-fruit = ['apple', 'orange', 'lemon', 'berry', 'mango']
-price = [30, 20, 60, 70, 60]
-# for i in range(len(fruit)):
-#     if price[i] >= 60:
-#         print(fruit[i])
-for i, (f, p) in enumerate(zip(fruit, price)):
-    if p >= 60:
-        print(f)
+list0 = ['Name', 'ID', 'gender', 'Math', 'English', 'Mandarin']
+student1 = ['Ben', 'A0000001', 'M', 66, 45, 77]
+student2 = ['Allen', 'A0000002', 'F', 89, 73, 62]
+student3 = ['Julie', 'A0000003', 'M', 46, 80, 69]
+data = [student1, student2, student3]
+each_data_length = len(list0)
+student_number = len(data)
+for i in range(student_number):
+    print(f' the result of {data[i][0]} :', end='')
+for j in range(3, each_data_length):
+    print(f'{list0[j]} {data[i][j]} point', end=',')
+    print()
