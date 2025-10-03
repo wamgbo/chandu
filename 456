@@ -1,0 +1,8 @@
+fruit = ['apple', 'orange', 'lemon', 'berry', 'mango']
+price = [30, 20, 60, 70, 60]
+# for i in range(len(fruit)):
+#     if price[i] >= 60:
+#         print(fruit[i])
+for i, (f, p) in enumerate(zip(fruit, price)):
+    if p >= 60:
+        print(f)
