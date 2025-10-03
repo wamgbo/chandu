@@ -6,7 +6,7 @@ data = [student1, student2, student3]
 each_data_length = len(list0)
 student_number = len(data)
 for i in range(student_number):
-    print(f' the result of {data[i][0]} :', end='')
+    print(f' the result of {data[i][0]:5s} :', end='')
 for j in range(3, each_data_length):
-    print(f'{list0[j]} {data[i][j]} point', end=',')
+    print(f'{list0[j]:5s} {data[i][j]:5d} point', end=',')
     print()
